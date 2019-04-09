@@ -49,6 +49,7 @@ covariance: an approximated covariance between two packet byte sizes
 correlation: an approximated correlation between two packet byte sizes
 
 
+in this project is stored all the data sets generated and the queries build from splunk to extract the features presented in the Master thesis of Jorge Alberto Medina Galindo
 
 Reference: 
 Y. Meidan, M. Bohadana, Y. Mathov, Y. Mirsky, D. Breitenbacher, A. Shabtai, and Y. Elovici 'N-BaIoT: Network-based Detection of IoT Botnet Attacks Using Deep Autoencoders', IEEE Pervasive Computing, Special Issue - Securing the IoT (July/Sep 2018).
