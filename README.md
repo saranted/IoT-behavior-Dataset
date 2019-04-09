@@ -28,7 +28,29 @@ transaction: calculate the time between different events giving the opportunity 
 By: statistical function that allows obtaining statistical data taking into account specific fields within the data: By _time src_ip
 
 
+Attribute Information:
+* features headers description 
+
+H : packet size transmition in a unidirectional depregating responses (host to all)
+HH : packet size trasmition in a bidireccional way betwen IPs (host to host) 
+HpHp: packet transmition from host to host taking ports as enrichment of data (host:port to host:port)
+HH_jit:  difference in time between transaction with the same IP values (host to host)
+
+* Time-frame 
+4 diferent time frames were stablish , 100ms, 500ms, 1.5s, 10s and 1m, selected by the computational speed that can be given for these ranges in real-time detection methods
+
+* The features extracted from the packet byte size: 
+count: number of packages by host in the time-frame
+mean: mean of the number of packages by host in the time-frame
+std: standard variation of the number of packages by host in the time-frame
+radius: The root squared sum of the two  variances 
+magnitude: The root squared sum of the two  means 
+covariance: an approximated covariance between two packet byte sizes
+correlation: an approximated correlation between two packet byte sizes
 
 
 
+Reference: 
+Y. Meidan, M. Bohadana, Y. Mathov, Y. Mirsky, D. Breitenbacher, A. Shabtai, and Y. Elovici 'N-BaIoT: Network-based Detection of IoT Botnet Attacks Using Deep Autoencoders', IEEE Pervasive Computing, Special Issue - Securing the IoT (July/Sep 2018).
 
+Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
