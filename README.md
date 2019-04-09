@@ -32,9 +32,13 @@ Attribute Information:
 * features headers description 
 
 H : packet size transmition in a unidirectional depregating responses (host to all)
+
 HH : packet size trasmition in a bidireccional way betwen IPs (host to host) 
+
 HpHp: packet transmition from host to host taking ports as enrichment of data (host:port to host:port)
+
 HH_jit:  difference in time between transaction with the same IP values (host to host)
+
 
 * Time-frame 
 4 diferent time frames were stablish , 100ms, 500ms, 1.5s, 10s and 1m, selected by the computational speed that can be given for these ranges in real-time detection methods
