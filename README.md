@@ -1,7 +1,7 @@
 # IoT-behavior-Dataset
 IoT behavior data set creation using splunk 
 
-the structure for creation of this data set is based on the research "N-BaIoT-Network-Based Detection of IoT Botnets Attacks Using Deep Autoencoders" to create the possibility of an incrementation data set
+the structure for creation of this data set is based on the research "N-BaIoT-Network-Based Detection of IoT Botnets Attacks Using Deep Autoencoders https://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT" to create the possibility of an incrementation data set
 
 all the information was processed using Splunk , the information was extracted in a standardized way for the future possible training of an IDS based on behavior as done in the aforementioned research
 
