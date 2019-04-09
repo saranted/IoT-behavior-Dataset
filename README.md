@@ -31,13 +31,14 @@ By: statistical function that allows obtaining statistical data taking into acco
 Attribute Information:
 * features headers description 
 
-H : packet size transmition in a unidirectional depregating responses (host to all)
+H : packet size transfer in a unidirectional deprecating response (host to all)
 
-HH : packet size trasmition in a bidireccional way betwen IPs (host to host) 
+HH : packet size transfer in a bidirectional way between IPs (host to host)
 
-HpHp: packet transmition from host to host taking ports as enrichment of data (host:port to host:port)
+HpHp: packet transfer from host to host taking ports as enrichment of data (host:port to host:port)
 
-HH_jit:  difference in time between transaction with the same IP values (host to host)
+HH_jit: difference in time between transaction with the same IP values (host to host)
+
 
 
 * Time-frame 
