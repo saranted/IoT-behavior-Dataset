@@ -1,0 +1,23 @@
+In order to replicate the laboratory is needed to follow the next steps
+
+  1.- Create a network 192.168.10.1/24
+  2.- Deploy 2 rasperry pi
+      one with docker ce installed (https://www.freecodecamp.org/news/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef/) 
+      and the other one with hassio (https://www.home-assistant.io/hassio/installation/)
+  3.- Install the add on mosquito broker in the hassio raspberry and allow the anonymus connections
+  4.- copy de IoT fan and IoT switch folder to the docker rasperry pi
+  5.- run the next command in the docker rasperry pi to create the network that will make the connection (verify that the information match with your network)
+  
+  docker network create -d macvlan  \
+  --subnet=192.168.10.1/24  \
+  --ip-range=192.168.10.128/25 \
+  --gateway=192.168.10.1  \
+  -o parent=eth0 lab-net
+  
+  6.- run the foolowing command inside of the IoT switch folder in the docker rasperry pi
+        docker build --no-cache -t lab/0.1 
+  7.- run the foolowing command inside of the IoT fan folder in the docker rasperry pi
+        docker build --no-cache -t lab/0.2 
+  
+  8.- verify that the emulated devices appear in Hassio as a mqtt devices 
+  9.- automate the tasks following the automations gui and tools provided by hassio , an example can be seen in the section automation of this document
