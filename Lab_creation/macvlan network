@@ -1,0 +1,25 @@
+docker network create -d macvlan  \
+  --subnet=192.168.10.1/24  \
+  --ip-range=192.168.10.128/25 \
+  --gateway=192.168.10.1  \
+  -o parent=eth0 pub-net
+
+
+docker build --no-cache -t test/network:1.4  .
+
+
+docker run -e var='1' -ti --network pub-net --name 1zq1 parse:0.91
+
+docker run -e var='1' -ti --network pub-net --name 1zq1 parse:0.91
+
+
+docker run --log-driver=splunk --log-opt splunk-token=4ad5e6a0-e43b-4e56-b40a-38bdf25e2941 --log-opt splunk-url=http://192.168.10.40:8088 -e var='1' --name 11q1 parse:0.91
+
+
+docker system df -v
+
+
+docker rmi t/0.3:latest 
+
+
+docker rm test/1.0
