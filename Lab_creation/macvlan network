@@ -2,9 +2,12 @@ docker network create -d macvlan  \
   --subnet=192.168.10.1/24  \
   --ip-range=192.168.10.128/25 \
   --gateway=192.168.10.1  \
-  -o parent=eth0 pub-net
+  -o parent=eth0 lab-net
 
 
-docker build --no-cache -t test/network:1.4  .
+docker build --no-cache -t lab/0.1  .
+
+docker build --no-cache -t lab/0.2  .
+
 
 
